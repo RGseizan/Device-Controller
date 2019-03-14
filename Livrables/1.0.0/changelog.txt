@@ -1,0 +1,56 @@
+##1.0.0 - 10/03/19
+
+###Fixed
+Le serveur affiche la liste réelle des devices auxquels il est connecté
+Le GPS ne crash plus lorsque le client n'a pas de localisation gps
+
+###Added
+Connexion par système de Tag : Le serveur génère et communique un tag au client. Le client indique le tag et se connecte au serveur.
+Configuration du serveur : Ajout d'un groupe d'options permettant de sélectionner les informations que le serveur souhaite récupérer
+Serveur : système de gestion des devices avec une base de données embarquée (SQLLite)
+Batterie : Composant permettant de récupérer l'état de la batterie du client. La donnée est exprimée en %
+Localisation : Composant permettant au serveur de récupérer les dernières coordonnées GPS du client. Ce dernier les envoie à l'utilisation du slider correspondant. Elle s'affiche coté serveur sur Google Maps
+Prise de vue via la caméra : Composant permettant au serveur de récupérer une prise de vue de la caméra. La prise de vue est gérée par l'envoi successifs d'images (fréquence à définir par le client et le serveur)
+Liste des appel : Composant permettant au serveur d'afficher la liste des derniers appels du device observé
+
+###Changed
+Architecture orienté composants : Chaque composant est géré dans un fragment indépendant. Les données sont acquises au lancement du fragment, puis affichées.
+
+
+###Removed
+
+##0.0.5 - 07/03/19
+
+###Added
+1st setup : Deliveries + Projects
+Protocole
+User - Architecture
+Server - Architecture
+ajout recap maquette
+User - IP Connection
+User - lombok
+Ajout classes DTO pour la BDD
+Ajout du visuel serveur 
+Ajout du visuel : client
+ajout images
+ajout classe creation BDD + tables guest + tag
+User - button validate user_login
+implementation DBRequest
+Ajout selection client maj opt
+add attribut name TagDTO
+Ajout Map
+User - network info
+Ajout information client
+ajout protocole serveur
+Implementation DBRequest + Ajout des exception
+creation classe BDConstante
+ajout mth connection bdd main activity pour test
+Ajout fragment aux visuels serveur
+User - test réseau ok
+
+###Changed
+task
+fragment
+
+###Removed
+Classe Client_IP
